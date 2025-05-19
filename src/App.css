@@ -1,0 +1,119 @@
+body, *:not(iframe):not(iframe *) {
+  font-family: 'Red Hat Display', sans-serif !important;
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #131722;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  flex: 1;
+  gap: 0;
+}
+
+
+/* Gear icon */
+.settings-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Offcanvas panel */
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.offcanvas.open {
+  right: 0;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.close-btn {
+  margin-top: 20px;
+  padding: 6px 12px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffffff;
+  color: #444;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.login-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.logout-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 999;
+}
