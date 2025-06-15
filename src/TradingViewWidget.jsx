@@ -14,13 +14,14 @@ function TradingViewWidget({ symbol }) {
       autosize: true,
       symbol: symbol,
       interval: 'D',
-      timezone: 'Etc/UTC',
+      timezone: 'Asia/Jakarta',
       theme: 'dark',
       style: '1',
-      locale: 'en',
+      locale: 'id',
       allow_symbol_change: true,
       support_host: 'https://www.tradingview.com',
     });
+
 
     container.current.appendChild(script);
     return () => {

@@ -31,7 +31,7 @@ function TickerTapeWidget() {
             "title": "SGD ke IDR"
           },
           {
-            "proName": "IDX:JKSE",
+            "proName": "IDX:COMPOSITE",
             "title": "IHSG"
           },
           {
